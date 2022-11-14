@@ -1,0 +1,83 @@
+{% extends "base.html" %} {% block content %}
+
+<h2 style="margin-bottom: 20px">
+  <center>Water Quality Predictor</center>
+</h2>
+<div>
+  <form id="upload-file" method="post" enctype="multipart/form-data">
+    <center>
+      <input
+        type="text"
+        name="year"
+        id=""
+        placeholder="Enter Year"
+        style="display: block"
+      />
+      <br />
+      <input
+        type="text"
+        name="do"
+        id=""
+        placeholder="Enter D.O"
+        style="display: block"
+      />
+      <br />
+
+      <input
+        type="text"
+        name="ph"
+        id=""
+        placeholder="Enter PH"
+        style="display: block"
+      />
+      <br />
+
+      <input
+        type="text"
+        name="co"
+        id=""
+        placeholder="Enter Conductivity"
+        style="display: block"
+      />
+      <br />
+
+      <input
+        type="text"
+        name="bod"
+        id=""
+        placeholder="Enter B.O.D"
+        style="display: block"
+      />
+      <br />
+
+      <input
+        type="text"
+        name="na"
+        id=""
+        placeholder="Enter Nitratenen"
+        style="display: block"
+      />
+      <br />
+
+      <input
+        type="text"
+        name="tc"
+        id=""
+        placeholder="Enter Total Coliform"
+        style="display: block"
+      />
+      <br />
+      <br />
+      <button type="button" class="btn btn-primary btn-lg" id="btn-predict">
+        Predict!
+      </button>
+    </center>
+  </form>
+
+  <div class="loader" style="display: none"></div>
+  <h2 style="color: white" id="result">
+    <span> </span>
+  </h2>
+</div>
+
+{% endblock %}
